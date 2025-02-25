@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+input{
+	border: none; /* 기본 보더 제거 */
+    width: 100%;
+    padding: 5px;
+}
+
+#topMenu{
+	height: 90px;
+	width: 1280px;
+}
+
+#topMenu>ul{
+    display: inline-block;
+}
+
+#topMenu>ul li {
+	list-style: none;
+	float: left;
+	line-height: 90px;
+    padding: 0 15px;
+}
+#topMenu>a{
+    line-height: 90px;
+    position: absolute ;
+    left: 30px;
+	text-decoration: none;
+	color: black;
+	display: block;
+	width: 90px;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+#product-list{
+	display: grid;
+	grid-template-rows: repeat(1fr, 10fr);
+}
+
+#product-top{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	height: 40px;
+}
+#product-top .category{
+	justify-self: start;
+	font-weight: bold;
+	padding-left: 40px;
+}
+#product-top .sort{
+	justify-self: end;
+	padding-right: 40px;
+}
+
+#product-middle {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3개의 열로 구성 */
+    gap: 20px; /* 각 아이템 간의 간격 */
+}
+.product-item {
+	border: none;
+    padding: 10px;
+}
+#product-middle img {
+	text-align: center;
+    width: 100%; /* 이미지를 셀 크기에 맞게 조정 */
+    height: auto;
+}
+.product-item a{
+	text-decoration: none;
+	color: black;
+}
+.product-item .name{
+	font-weight: bold;
+}
